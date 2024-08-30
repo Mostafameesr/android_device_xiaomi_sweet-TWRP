@@ -47,14 +47,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_XZ_UTILS=1
         export FOX_DELETE_AROMAFM=1
-        export TARGET_DEVICE_ALT="sweetin"
+        export TARGET_DEVICE_ALT="sweet"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
         export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
 
 	# R11.1 Settings
 	export FOX_VERSION="R11.1_7"
-	export OF_MAINTAINER="Aryan"
+	export OF_MAINTAINER="MOSTAFAMEESR"
 
 else
 	if [ -z "$FOX_BUILD_DEVICE" -a -z "$BASH_SOURCE" ]; then
